@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Invoice 
+	xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" 
+	xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
+	xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"  
+	xmlns:ds="http://www.w3.org/2000/09/xmldsig#" 
+	xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" 
+	xmlns:sts="dian:gov:co:facturaelectronica:Structures-2-1" 
+	xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" 
+	xmlns:xades141="http://uri.etsi.org/01903/v1.4.1#" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2     http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-Invoice-2.1.xsd">
+	<ext:UBLExtensions>
+		<ext:UBLExtension>
+			<ext:ExtensionContent>
+				<sts:DianExtensions>
+					<sts:InvoiceControl>
+						<sts:InvoiceAuthorization>18760000001</sts:InvoiceAuthorization>
+						<sts:AuthorizationPeriod>
+							<cbc:StartDate>2019-01-19</cbc:StartDate>
+							<cbc:EndDate>2030-01-19</cbc:EndDate>
+						</sts:AuthorizationPeriod>
+						<sts:AuthorizedInvoices>
+							<sts:Prefix>SETP</sts:Prefix>
+							<sts:From>990000000</sts:From>
+							<sts:To>995000000</sts:To>
+						</sts:AuthorizedInvoices>
+					</sts:InvoiceControl>
+					<sts:InvoiceSource>
+						<cbc:IdentificationCode listAgencyID="6" listAgencyName="United Nations Economic Commission for Europe" listSchemeURI="urn:oasis:names:specification:ubl:codelist:gc:CountryIdentificationCode-2.1">CO</cbc:IdentificationCode>
+					</sts:InvoiceSource>
+					<sts:SoftwareProvider>
+						<sts:ProviderID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="4" schemeName="31">39539091</sts:ProviderID>
+						<sts:SoftwareID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">23fb4da2-1ebc-4ac9-a89a-e5dcabd182a5</sts:SoftwareID>
+					</sts:SoftwareProvider>
+					<sts:SoftwareSecurityCode schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">
+						39ca3ac64c03f60e6ee61be5188e5a5bcf39442bc167462afde46e01ed421291b432624eebf018f66f60d66232f76501
+					</sts:SoftwareSecurityCode>
+					<sts:AuthorizationProvider>
+						<sts:AuthorizationProviderID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="4" schemeName="31">800197268</sts:AuthorizationProviderID>
+					</sts:AuthorizationProvider>
+					<sts:QRCode>
+						NroFactura=SETP990000002
+						NitFacturador=39539091
+						NitAdquiriente=1121871348
+						FechaFactura=2020-08-26
+						ValorTotalFactura=1785000.0
+						CUFE=4f6ca65932913437604ed138d72204208ec51d6db929c007f40e8007a1bc16b451e2b90e07d1ddd39426bdd317d32f10
+						URL=https://catalogo-vpfe.dian.gov.co/document/searchqr?documentkey=4f6ca65932913437604ed138d72204208ec51d6db929c007f40e8007a1bc16b451e2b90e07d1ddd39426bdd317d32f10
+					</sts:QRCode>
+				</sts:DianExtensions>
+			</ext:ExtensionContent>
+		</ext:UBLExtension>
+	</ext:UBLExtensions>
+	<cbc:UBLVersionID>UBL 2.1</cbc:UBLVersionID>
+	<cbc:CustomizationID>10</cbc:CustomizationID>
+	<cbc:ProfileID>DIAN 2.1</cbc:ProfileID>
+	<cbc:ProfileExecutionID>2</cbc:ProfileExecutionID>
+	<cbc:ID>SETP990000002</cbc:ID>
+	<cbc:UUID schemeID="2" schemeName="CUFE-SHA384">
+		4f6ca65932913437604ed138d72204208ec51d6db929c007f40e8007a1bc16b451e2b90e07d1ddd39426bdd317d32f10
+	</cbc:UUID>
+	<cbc:IssueDate>2020-08-26</cbc:IssueDate>
+	<cbc:IssueTime>11:33:30-05:00</cbc:IssueTime>
+	<cbc:InvoiceTypeCode>01</cbc:InvoiceTypeCode>
+	<cbc:DocumentCurrencyCode listAgencyID="6" listAgencyName="United Nations Economic Commission for Europe" listID="ISO 4217 Alpha">COP</cbc:DocumentCurrencyCode>
+	<cbc:LineCountNumeric>5</cbc:LineCountNumeric>
+	<cac:InvoicePeriod>
+		<cbc:StartDate>2019-05-01</cbc:StartDate>
+		<cbc:EndDate>2019-05-30</cbc:EndDate>
+	</cac:InvoicePeriod>
+	<cac:AccountingSupplierParty>
+		<cbc:AdditionalAccountID>2</cbc:AdditionalAccountID>
+		<cac:Party>
+			<cac:PartyName>
+				<cbc:Name>Cosmo Adronos</cbc:Name>
+			</cac:PartyName>
+			<cac:PhysicalLocation>
+				<cac:Address>
+					<cbc:ID>50001</cbc:ID>
+					<cbc:CityName>VILLAVICENCIO</cbc:CityName>
+					<cbc:CountrySubentity>Meta</cbc:CountrySubentity>
+					<cbc:CountrySubentityCode>21</cbc:CountrySubentityCode>
+					<cac:AddressLine><cbc:Line>Carrera 30 A No. 39 - 06 Centro.</cbc:Line></cac:AddressLine>
+					<cac:Country>
+						<cbc:IdentificationCode>CO</cbc:IdentificationCode>
+						<cbc:Name languageID="es">Colombia</cbc:Name>
+					</cac:Country>
+				</cac:Address>
+			</cac:PhysicalLocation>
+			<cac:PartyTaxScheme>
+				<cbc:RegistrationName>Cosmo Adronos</cbc:RegistrationName>
+				<cbc:CompanyID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="4" schemeName="31">39539091</cbc:CompanyID>
+				<cbc:TaxLevelCode listName="05">O-05;O-42;O-48</cbc:TaxLevelCode>
+				<cac:RegistrationAddress>
+				<cbc:ID>50001</cbc:ID>
+				<cbc:CityName>VILLAVICENCIO</cbc:CityName>
+				<cbc:CountrySubentity>Meta</cbc:CountrySubentity>
+				<cbc:CountrySubentityCode>21</cbc:CountrySubentityCode>
+				<cac:AddressLine>
+					<cbc:Line>Carrera 30 A No. 39 - 06 Centro.</cbc:Line>
+				</cac:AddressLine>
+				<cac:Country>
+				<cbc:IdentificationCode>CO</cbc:IdentificationCode>
+					<cbc:Name languageID="es">Colombia</cbc:Name>
+				</cac:Country>
+				</cac:RegistrationAddress>
+				<cac:TaxScheme>
+					<cbc:ID>01</cbc:ID>
+					<cbc:Name>IVA</cbc:Name>
+				</cac:TaxScheme>
+			</cac:PartyTaxScheme>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Cosmo Adronos</cbc:RegistrationName>
+				<cbc:CompanyID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="9" schemeName="CompanyNITCode">39539091</cbc:CompanyID>
+			</cac:PartyLegalEntity>
+			<cac:Contact>
+				<cbc:Name>Cosmo Adronos</cbc:Name>
+				<cbc:Telephone>6622573</cbc:Telephone>
+				<cbc:ElectronicMail>cosmoadornos@gmail.com</cbc:ElectronicMail>
+				<cbc:Note>Información de contacto</cbc:Note>
+			</cac:Contact>
+		</cac:Party>
+	</cac:AccountingSupplierParty>
+	<cac:AccountingCustomerParty>
+		<cbc:AdditionalAccountID>1</cbc:AdditionalAccountID>
+		<cac:Party>
+		<cac:PartyIdentification>
+			<cbc:ID schemeName="13">1121871348</cbc:ID>
+		</cac:PartyIdentification>
+		<cac:PartyName>
+		<cbc:Name>BRAYAN MAURICIO NOVOA SALAZAR</cbc:Name>
+		</cac:PartyName>
+		<cac:PhysicalLocation>
+			<cac:Address>
+				<cbc:ID>50001</cbc:ID>
+				<cbc:CityName>VILLAVICENCIO</cbc:CityName>
+				<cbc:PostalZone>500001</cbc:PostalZone>
+				<cbc:CountrySubentity>Meta</cbc:CountrySubentity>
+				<cbc:CountrySubentityCode>Meta</cbc:CountrySubentityCode>
+				<cac:AddressLine>
+					<cbc:Line>CL 14 SUR 49 A 79</cbc:Line>
+				</cac:AddressLine>
+				<cac:Country>
+					<cbc:IdentificationCode>CO</cbc:IdentificationCode>
+					<cbc:Name languageID="es">COLOMBIA</cbc:Name>
+				</cac:Country>
+			</cac:Address>
+		</cac:PhysicalLocation>
+		<cac:PartyTaxScheme>
+			<cbc:RegistrationName>BRAYAN MAURICIO NOVOA SALAZAR</cbc:RegistrationName>
+			<cbc:CompanyID schemeID="0" schemeName="13" schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">1121871348</cbc:CompanyID>
+			<cbc:TaxLevelCode listName="49">O-49</cbc:TaxLevelCode>
+			<cac:RegistrationAddress>
+				<cbc:ID>50001</cbc:ID>
+				<cbc:CityName>VILLAVICENCIO</cbc:CityName>
+				<cbc:PostalZone>500001</cbc:PostalZone>
+				<cbc:CountrySubentity>Meta</cbc:CountrySubentity>
+				<cbc:CountrySubentityCode>2150</cbc:CountrySubentityCode>
+				<cac:AddressLine>
+					<cbc:Line>CL 14 SUR 49 A 79</cbc:Line>
+				</cac:AddressLine>
+				<cac:Country>
+					<cbc:IdentificationCode>CO</cbc:IdentificationCode>
+					<cbc:Name>COLOMBIA</cbc:Name>
+				</cac:Country>
+			</cac:RegistrationAddress>
+			<cac:TaxScheme>
+				<cbc:ID>01</cbc:ID>
+				<cbc:Name>IVA</cbc:Name>
+			</cac:TaxScheme>
+		</cac:PartyTaxScheme>
+		<cac:PartyLegalEntity>
+			<cbc:RegistrationName>BRAYAN MAURICIO NOVOA SALAZAR</cbc:RegistrationName>
+			<cbc:CompanyID schemeID="0" schemeName="13" schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">1121871348</cbc:CompanyID>
+		</cac:PartyLegalEntity>
+		<cac:Contact>
+			<cbc:Telephone>6622573</cbc:Telephone>
+			<cbc:ElectronicMail>bnovoa.linux@gmail.com</cbc:ElectronicMail>
+		</cac:Contact>
+		</cac:Party>
+	</cac:AccountingCustomerParty>
+	<cac:PaymentMeans>
+		<cbc:ID>1</cbc:ID>
+		<cbc:PaymentMeansCode>42</cbc:PaymentMeansCode>
+	</cac:PaymentMeans>
+	<cac:TaxTotal>
+		<cbc:TaxAmount currencyID="COP">285000.0</cbc:TaxAmount>
+		<cac:TaxSubtotal>
+			<cbc:TaxableAmount currencyID="COP">1500000.0</cbc:TaxableAmount>
+			<cbc:TaxAmount currencyID="COP">285000.0</cbc:TaxAmount>
+			<cac:TaxCategory>
+				<cbc:Percent>19.00</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>01</cbc:ID>
+					<cbc:Name>IVA</cbc:Name>
+				</cac:TaxScheme>
+			</cac:TaxCategory>
+		</cac:TaxSubtotal>
+	</cac:TaxTotal>
+	<cac:TaxTotal> <cbc:TaxAmount currencyID="COP">0.00</cbc:TaxAmount> <cac:TaxSubtotal> <cbc:TaxableAmount currencyID="COP">0.00</cbc:TaxableAmount> <cbc:TaxAmount currencyID="COP">0.00</cbc:TaxAmount> <cac:TaxCategory> <cbc:Percent>0.00</cbc:Percent> <cac:TaxScheme> <cbc:ID>04</cbc:ID> <cbc:Name>Impuesto al Consumo</cbc:Name> </cac:TaxScheme> </cac:TaxCategory> </cac:TaxSubtotal> </cac:TaxTotal>
+	<cac:TaxTotal> <cbc:TaxAmount currencyID="COP">0.00</cbc:TaxAmount> <cac:TaxSubtotal> <cbc:TaxableAmount currencyID="COP">0.00</cbc:TaxableAmount> <cbc:TaxAmount currencyID="COP">0.00</cbc:TaxAmount> <cac:TaxCategory> <cbc:Percent>0.00</cbc:Percent> <cac:TaxScheme> <cbc:ID>03</cbc:ID> <cbc:Name>Industria Comercio Avisos</cbc:Name> </cac:TaxScheme> </cac:TaxCategory> </cac:TaxSubtotal> </cac:TaxTotal>
+	<cac:LegalMonetaryTotal>
+		<cbc:LineExtensionAmount currencyID="COP">1500000.0</cbc:LineExtensionAmount>
+		<cbc:TaxExclusiveAmount currencyID="COP">1500000.0</cbc:TaxExclusiveAmount>
+		<cbc:TaxInclusiveAmount currencyID="COP">1785000.0</cbc:TaxInclusiveAmount>
+		<cbc:AllowanceTotalAmount currencyID="COP">0.00</cbc:AllowanceTotalAmount>
+		<cbc:ChargeTotalAmount currencyID="COP">0.00</cbc:ChargeTotalAmount>
+		<cbc:PayableAmount currencyID="COP">1785000.0</cbc:PayableAmount>
+	</cac:LegalMonetaryTotal>
+	<cac:InvoiceLine>
+		<cbc:ID>1</cbc:ID>
+		<cbc:InvoicedQuantity unitCode="EA">1.0</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="COP">10000.0</cbc:LineExtensionAmount>
+		<cac:TaxTotal>
+			<cbc:TaxAmount currencyID="COP">0.0</cbc:TaxAmount>
+			<cac:TaxSubtotal>
+				<cbc:TaxableAmount currencyID="COP">8403.36</cbc:TaxableAmount>
+				<cbc:TaxAmount currencyID="COP">0.0</cbc:TaxAmount>
+				<cbc:Percent>19</cbc:Percent>
+				<cac:TaxCategory>
+					<cac:TaxScheme>
+						<cbc:ID>01</cbc:ID>
+						<cbc:Name>IVA</cbc:Name>
+					</cac:TaxScheme>
+				</cac:TaxCategory>
+			</cac:TaxSubtotal>
+		</cac:TaxTotal>
+		<cac:Item>
+		<cbc:Description>HILOS</cbc:Description>
+		<cac:StandardItemIdentification>
+			<cbc:ID schemeID="">1</cbc:ID>
+		</cac:StandardItemIdentification>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="COP">8403.36</cbc:PriceAmount>
+			<cbc:BaseQuantity unitCode="DZN">1.0</cbc:BaseQuantity>
+		</cac:Price>
+	</cac:InvoiceLine>
+	<cac:InvoiceLine>
+		<cbc:ID>2</cbc:ID>
+		<cbc:InvoicedQuantity unitCode="EA">1.0</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="COP">10000.0</cbc:LineExtensionAmount>
+		<cac:TaxTotal>
+			<cbc:TaxAmount currencyID="COP">0.0</cbc:TaxAmount>
+			<cac:TaxSubtotal>
+				<cbc:TaxableAmount currencyID="COP">8403.36</cbc:TaxableAmount>
+				<cbc:TaxAmount currencyID="COP">0.0</cbc:TaxAmount>
+				<cbc:Percent>19</cbc:Percent>
+				<cac:TaxCategory>
+					<cac:TaxScheme>
+						<cbc:ID>01</cbc:ID>
+						<cbc:Name>IVA</cbc:Name>
+					</cac:TaxScheme>
+				</cac:TaxCategory>
+			</cac:TaxSubtotal>
+		</cac:TaxTotal>
+		<cac:Item>
+		<cbc:Description>CINTAS</cbc:Description>
+		<cac:StandardItemIdentification>
+			<cbc:ID schemeID="">4</cbc:ID>
+		</cac:StandardItemIdentification>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="COP">8403.36</cbc:PriceAmount>
+			<cbc:BaseQuantity unitCode="DZN">1.0</cbc:BaseQuantity>
+		</cac:Price>
+	</cac:InvoiceLine>
+	<cac:InvoiceLine>
+		<cbc:ID>3</cbc:ID>
+		<cbc:InvoicedQuantity unitCode="EA">1.0</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="COP">10000.0</cbc:LineExtensionAmount>
+		<cac:TaxTotal>
+			<cbc:TaxAmount currencyID="COP">0.0</cbc:TaxAmount>
+			<cac:TaxSubtotal>
+				<cbc:TaxableAmount currencyID="COP">8403.36</cbc:TaxableAmount>
+				<cbc:TaxAmount currencyID="COP">0.0</cbc:TaxAmount>
+				<cbc:Percent>19</cbc:Percent>
+				<cac:TaxCategory>
+					<cac:TaxScheme>
+						<cbc:ID>01</cbc:ID>
+						<cbc:Name>IVA</cbc:Name>
+					</cac:TaxScheme>
+				</cac:TaxCategory>
+			</cac:TaxSubtotal>
+		</cac:TaxTotal>
+		<cac:Item>
+		<cbc:Description>PAPELERIA</cbc:Description>
+		<cac:StandardItemIdentification>
+			<cbc:ID schemeID="">14</cbc:ID>
+		</cac:StandardItemIdentification>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="COP">8403.36</cbc:PriceAmount>
+			<cbc:BaseQuantity unitCode="DZN">1.0</cbc:BaseQuantity>
+		</cac:Price>
+	</cac:InvoiceLine>
+	<cac:InvoiceLine>
+		<cbc:ID>4</cbc:ID>
+		<cbc:InvoicedQuantity unitCode="EA">1.0</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="COP">10000.0</cbc:LineExtensionAmount>
+		<cac:TaxTotal>
+			<cbc:TaxAmount currencyID="COP">0.0</cbc:TaxAmount>
+			<cac:TaxSubtotal>
+				<cbc:TaxableAmount currencyID="COP">8403.36</cbc:TaxableAmount>
+				<cbc:TaxAmount currencyID="COP">0.0</cbc:TaxAmount>
+				<cbc:Percent>19</cbc:Percent>
+				<cac:TaxCategory>
+					<cac:TaxScheme>
+						<cbc:ID>01</cbc:ID>
+						<cbc:Name>IVA</cbc:Name>
+					</cac:TaxScheme>
+				</cac:TaxCategory>
+			</cac:TaxSubtotal>
+		</cac:TaxTotal>
+		<cac:Item>
+		<cbc:Description>DECORACION</cbc:Description>
+		<cac:StandardItemIdentification>
+			<cbc:ID schemeID="">27</cbc:ID>
+		</cac:StandardItemIdentification>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="COP">8403.36</cbc:PriceAmount>
+			<cbc:BaseQuantity unitCode="DZN">1.0</cbc:BaseQuantity>
+		</cac:Price>
+	</cac:InvoiceLine>
+	<cac:InvoiceLine>
+		<cbc:ID>5</cbc:ID>
+		<cbc:InvoicedQuantity unitCode="EA">1.0</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="COP">10000.0</cbc:LineExtensionAmount>
+		<cac:TaxTotal>
+			<cbc:TaxAmount currencyID="COP">0.0</cbc:TaxAmount>
+			<cac:TaxSubtotal>
+				<cbc:TaxableAmount currencyID="COP">8403.36</cbc:TaxableAmount>
+				<cbc:TaxAmount currencyID="COP">0.0</cbc:TaxAmount>
+				<cbc:Percent>19</cbc:Percent>
+				<cac:TaxCategory>
+					<cac:TaxScheme>
+						<cbc:ID>01</cbc:ID>
+						<cbc:Name>IVA</cbc:Name>
+					</cac:TaxScheme>
+				</cac:TaxCategory>
+			</cac:TaxSubtotal>
+		</cac:TaxTotal>
+		<cac:Item>
+		<cbc:Description>TEJIDOS</cbc:Description>
+		<cac:StandardItemIdentification>
+			<cbc:ID schemeID="">39</cbc:ID>
+		</cac:StandardItemIdentification>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="COP">8403.36</cbc:PriceAmount>
+			<cbc:BaseQuantity unitCode="DZN">1.0</cbc:BaseQuantity>
+		</cac:Price>
+	</cac:InvoiceLine>
+</Invoice>
