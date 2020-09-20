@@ -504,7 +504,7 @@ public class Config extends javax.swing.JFrame {
         
         EmpresaController empcon = new EmpresaController();
         Empresa empresa;
-        empresa = empcon.buscarDatosEmpresa("39539091");
+        empresa = empcon.buscarDatosEmpresa("NIT EMPRESA");
         empresa.setCompanyName(txtNombre.getText());
         empresa.setCompanyNIT(txtNIT.getText());
         empresa.setTelefono(txtTelefono.getText());

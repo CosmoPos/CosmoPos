@@ -205,11 +205,11 @@ public class VentasWhite extends javax.swing.JFrame {
     private void iniciarInterface(){
         setHora();
         //empresa = new Empresa();
-        empresa = empcon.buscarDatosEmpresa("39539091");
+        empresa = empcon.buscarDatosEmpresa("NIT EMPRESA");
         //factura.setEmpresa(empresa);
         //JOptionPane.showMessageDialog(null, "Resolucion:"+empresa.getDian().getTextResol());
         //dian = empresa.getDian();
-        //dian = diancon.obtenerDianEmpresa("39539091"); //////////
+        //dian = diancon.obtenerDianEmpresa("NIT EMPRESA"); //////////
         obtenerLineas();
         obtenerProductos();
         obtenerUsuarios();
