@@ -125,7 +125,7 @@ public class InformeVentasController {
             celda.setColspan(9);
             tbEmpresa.addCell(celda);
             
-            celda = new PdfPCell(new Phrase("Empresa: "+"CosmoAdornos", blod));
+            celda = new PdfPCell(new Phrase("Empresa: "+"NOMBRE DE LA EMPRESA", blod));
             celda.setHorizontalAlignment(Element.ALIGN_LEFT);
             celda.setColspan(6);
             tbEmpresa.addCell(celda);
