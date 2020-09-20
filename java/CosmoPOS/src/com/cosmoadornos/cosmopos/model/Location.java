@@ -13,13 +13,11 @@ public class Location {
     Departamento departamento;
     Municipio minucipio;
     CodigoPostal codigoPostal;
-    String direccion;
 
-    public Location(Departamento departamento, Municipio minucipio, CodigoPostal codigoPostal, String direccion) {
+    public Location(Departamento departamento, Municipio minucipio, CodigoPostal codigoPostal) {
         this.departamento = departamento;
         this.minucipio = minucipio;
         this.codigoPostal = codigoPostal;
-        this.direccion = direccion;
     }
 
     public Municipio getMinucipio() {
@@ -44,14 +42,6 @@ public class Location {
 
     public void setCodigoPostal(CodigoPostal codigoPostal) {
         this.codigoPostal = codigoPostal;
-    }
-
-    public String getDireccion() {
-        return direccion;
-    }
-
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
     }
 
 }

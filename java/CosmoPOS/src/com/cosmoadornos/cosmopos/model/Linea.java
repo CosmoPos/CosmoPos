@@ -28,6 +28,11 @@ public class Linea {
         this.estado = estado;
     }
 
+    public Linea(int id, String lineaNombre) {
+        this.id = id;
+        this.lineaNombre = lineaNombre;
+    }
+
     public int getId() {
         return id;
     }

@@ -11,8 +11,8 @@ package com.cosmoadornos.cosmopos.model;
  */
 public class DatosEmpresa  extends Empresa{
 
-    public DatosEmpresa(int id,Dian dian, String CompanyName, String CompanyNIT, Location location, Regimen regimen, String telefono, String email) {
-        super(id, dian, CompanyName, CompanyNIT, location, regimen, telefono, email);
+    public DatosEmpresa(int id,Dian dian, String CompanyName, String CompanyNIT, Location location, Regimen regimen, String direccion, String telefono, String email) {
+        super(id, dian, CompanyName, CompanyNIT, location, regimen, direccion, telefono, email);
     }
     
 }

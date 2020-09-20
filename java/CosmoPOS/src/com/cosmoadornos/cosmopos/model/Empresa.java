@@ -5,6 +5,8 @@
  */
 package com.cosmoadornos.cosmopos.model;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author b41n
@@ -12,20 +14,25 @@ package com.cosmoadornos.cosmopos.model;
 public class Empresa {
     private int id;
     private Dian dian;
+    ArrayList<ResponsabilidadFiscal> responsabilidades;
     String CompanyName;
     String CompanyNIT;
     Location location;
     Regimen regimen;
+    String direccion;
     String telefono;
     String email;
     //int IndustryClasificationCode;
     
-    public Empresa(int id, Dian dian, String CompanyName, String CompanyNIT/*, int IndustryClasificationCode]*/,Location location, Regimen regimen, String telefono, String email){
+    public Empresa(int id, Dian dian, String CompanyName, String CompanyNIT/*, int IndustryClasificationCode]*/,Location location, Regimen regimen, String direccion, String telefono, String email){
+        this.id = id;
+        this.dian = dian;
         this.CompanyName = CompanyName;
         this.CompanyNIT = CompanyNIT;
         //this.IndustryClasificationCode = IndustryClasificationCode;
         this.location = location;
         this.regimen = regimen;
+        this.direccion = direccion;
         this.telefono = telefono;
         this.email = email;
     }
@@ -84,6 +91,14 @@ public class Empresa {
 
     public void setTelefono(String telefono) {
         this.telefono = telefono;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
     }
 
     /*public int getIndustryClasificationCode() {

@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package com.cosmoadornos.cosmopos.model;
-import com.cosmoadornos.cosmopos.controller.Functions;
 
 /**
  *
@@ -26,5 +25,4 @@ public class ArchivoXML {
     public void setFacturaElectronica(FacturaElectronica facturaElectronica) {
         this.facturaElectronica = facturaElectronica;
     }
-
 }

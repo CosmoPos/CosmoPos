@@ -13,51 +13,52 @@ public class Producto {
     
     int id;
     String subTipo;
+    int subTipoId;
     int compraId;
     String nombre;
     String referencia;
-    int precio;
-    float cantidad;
     int descuento;
-    int total;  
-    
-    
-    public Producto(){
-    }
-    
-    /*
-    public Producto(String nombre, int precio){
-        this.nombre = nombre;
-        this.precio = precio;
-    }
-    */
+    float precio;
+    float productoIVA;
+    float total;
     
     public Producto(String nombre){
         this.nombre = nombre;
     }
 
-    public Producto(String nombre, String referencia, int precio, float cantidad) {
-        this.referencia = referencia;
-        this.nombre = nombre;
-        this.precio = precio;
-        this.cantidad = cantidad;
-    }
-    
-    public Producto(String nombre, String referencia, String subTipo, float cantidad, int precio, int total) {
+    public Producto(int id,String nombre, String referencia, String subTipo, int subTipoId, float precio, float productoIVA, float total) {
+        this.id = id;
         this.nombre = nombre;
         this.referencia = referencia;
         this.subTipo = subTipo;
-        this.cantidad = cantidad;
+        this.subTipoId = subTipoId;
+        this.precio = precio;
+        this.productoIVA = productoIVA;
+        this.total = total;
+    }
+
+
+    
+    public Producto(String nombre, String referencia, float precio) {
+        this.referencia = referencia;
+        this.nombre = nombre;
+        this.precio = precio;
+    }
+    
+    public Producto(int id,String nombre, String referencia, String subTipo, float precio, float productoIVA, float total) {
+        this.id = id;
+        this.nombre = nombre;
+        this.referencia = referencia;
+        this.subTipo = subTipo;
         this.precio = precio;
         this.total = total;
     }
     
-    public Producto(int id, String nombre, String referencia, int precio, int cantidad) {
+    public Producto(int id, String nombre, String referencia, float precio) {
         this.id = id;
         this.referencia = referencia;
         this.nombre = nombre;
         this.precio = precio;
-        this.cantidad = cantidad;
     }
     
     public Producto(int id, String nombre){
@@ -65,30 +66,19 @@ public class Producto {
         this.nombre = nombre;
     }
     
-    public Producto(int precio, int cantidad, String nombre){
+    
+    public Producto(String nombre, float precio){
         this.nombre = nombre;
         this.precio = precio;
-        this.cantidad = cantidad;
-    }
-    public Producto(String nombre, int precio, float cantidad){
-        this.nombre = nombre;
-        this.precio = precio;
-        this.cantidad = cantidad;
     }
     
-    
-    public Producto(int id, String nombre, String subTipo, String referencia,  int precio){
+    // CONSTRUCTOR PARA LA LISTA DETALLADA
+    public Producto(int id, String nombre, String subTipo, int subTipoId, String referencia,  float precio){
         this.id = id;
         this.nombre = nombre;
         this.subTipo = subTipo;
+        this.subTipoId = subTipoId;
         this.referencia = referencia;
-        this.precio = precio;
-    }
-    
-    
-    public Producto(String referencia, String nombre, int precio){
-        this.referencia = referencia;
-        this.nombre = nombre;
         this.precio = precio;
     }
 
@@ -106,6 +96,14 @@ public class Producto {
 
     public void setSubTipo(String subTipo) {
         this.subTipo = subTipo;
+    }
+
+    public int getSubTipoId() {
+        return subTipoId;
+    }
+
+    public void setSubTipoId(int subTipoId) {
+        this.subTipoId = subTipoId;
     }
 
     public int getCompraId() {
@@ -132,20 +130,20 @@ public class Producto {
         this.referencia = referencia;
     }
 
-    public int getPrecio() {
+    public float getPrecio() {
         return precio;
     }
 
-    public void setPrecio(int precio) {
+    public void setPrecio(float precio) {
         this.precio = precio;
     }
 
-    public float getCantidad() {
-        return cantidad;
+    public float getProductoIVA() {
+        return productoIVA;
     }
 
-    public void setCantidad(float cantidad) {
-        this.cantidad = cantidad;
+    public void setProductoIVA(float productoIVA) {
+        this.productoIVA = productoIVA;
     }
 
     public int getDescuento() {
@@ -156,11 +154,11 @@ public class Producto {
         this.descuento = descuento;
     }
 
-    public int getTotal() {
+    public float getTotal() {
         return total;
     }
 
-    public void setTotal(int total) {
+    public void setTotal(float total) {
         this.total = total;
     }
 

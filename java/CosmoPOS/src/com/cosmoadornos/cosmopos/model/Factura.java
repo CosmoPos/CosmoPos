@@ -23,7 +23,7 @@ public class Factura {
     String facturaFecha;
     String facturaHora;
     Cliente cliente;
-    ArrayList<Producto> productos;
+    //ArrayList<Producto> productos;
     ArrayList<Venta> ventas;
     
     /*
@@ -32,12 +32,12 @@ public class Factura {
     }
     */
     
-    public Factura(int factNum, Empresa empresa, String facturaFecha, String facturaHora, Cliente cliente, ArrayList<Producto> productos, ArrayList<Venta> ventas, float totalSinImp, float totalImp, float totalMasImp){
+    public Factura(int factNum, Empresa empresa, String facturaFecha, String facturaHora, Cliente cliente /*ArrayList<Producto> productos*/, ArrayList<Venta> ventas, float totalSinImp, float totalImp, float totalMasImp){
         this.empresa = empresa;
         this.facturaFecha = facturaFecha;
         this.facturaHora = facturaHora;
         this.cliente = cliente;
-        this.productos = productos;
+        //this.productos = productos;
         this.ventas = ventas;
         this.factNum = factNum;
         this.totalSinImp = totalSinImp;
@@ -107,7 +107,7 @@ public class Factura {
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
     }
-
+/*
     public ArrayList<Producto> getProductos() {
         return productos;
     }
@@ -115,7 +115,7 @@ public class Factura {
     public void setProductos(ArrayList<Producto> productos) {
         this.productos = productos;
     }
-
+*/
     public ArrayList<Venta> getVentas() {
         return ventas;
     }

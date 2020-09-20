@@ -12,13 +12,15 @@ package com.cosmoadornos.cosmopos.model;
 public class TipoProducto {
     
     int id;
+    String medidaCod;
     String tipo;
 
     public TipoProducto() {
     }
 
-    public TipoProducto(int id, String tipo) {
+    public TipoProducto(int id, String medidaCod, String tipo) {
         this.id = id;
+        this.medidaCod = medidaCod;
         this.tipo = tipo;
     }
 
@@ -28,6 +30,14 @@ public class TipoProducto {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getMedidaCod() {
+        return medidaCod;
+    }
+
+    public void setMedidaCod(String medidaCod) {
+        this.medidaCod = medidaCod;
     }
 
     public String getTipo() {
